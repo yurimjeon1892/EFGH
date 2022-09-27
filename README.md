@@ -17,6 +17,13 @@ conda activate efgh
 pip install -r requirements.txt
 ```
 
+## Set up
+```
+cd lib 
+python build_khash_cffi.py 
+cd ..
+```
+
 ## Data
 Download RELLIS-3D dataset from https://unmannedlab.github.io/research/RELLIS-3D
 ```
@@ -41,13 +48,6 @@ data
     └── pt_val.lst
 ```
 
-## Set up
-```
-cd lib 
-python build_khash_cffi.py 
-cd ..
-```
-
 ## Train
 Set data_root and ckpt_dir in the train_rellis.yaml file.
 ```
@@ -60,6 +60,21 @@ Set ckpt_path in the test_rellis.yaml file.
 python main.py configs/test_rellis.yaml
 ```
 
+## Citation
+If you use our code or method in your work, please cite the following:
+```
+@article{jeon2022efghnet,
+  title={EFGHNet: A Versatile Image-to-Point Cloud Registration Network for Extreme Outdoor Environment},
+  author={Jeon, Yurim and Seo, Seung-Woo},
+  journal={IEEE Robotics and Automation Letters},
+  volume={7},
+  number={3},
+  pages={7511--7517},
+  year={2022},
+  publisher={IEEE}
+}
+```
+Please direct any questions to Yurim Jeon at yurimjeon1892@gmail.com
 
 ## Acknowledgements
 Our BCL implementation is based on https://github.com/laoreja/HPLFlowNet. 
