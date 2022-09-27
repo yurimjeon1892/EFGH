@@ -9,7 +9,7 @@ torchgeometry
 numpy==1.19
 PyYAML
 matplotlib
-open3d
+open3d==0.14.1
 opencv-python
 Pillow
 pyquaternion
