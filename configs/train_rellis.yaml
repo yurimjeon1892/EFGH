@@ -1,0 +1,69 @@
+# general args
+test: False
+ckpt_dir: ./ckpts/rellis
+resume_path: False
+pretrained_path: False
+
+arch: EFGH
+last_relu: False
+
+use_leaky: True
+bcn_use_bias: True
+bcn_use_norm: True
+
+DEVICE: cuda
+
+# Dataset
+dataset: RELLIS_3D
+data_root: /data/RELLIS-3D
+num_points: 65536
+lidar_line: 64
+lidar_fov_rad: [0.125, -0.125]
+raw_cam_img_size: [900, 1600]
+
+train_samples: -1
+val_samples: -1
+
+# for model
+dim: 3
+batch_size: 1
+scale_map: [[1., 1],
+            [0.75, 1],
+            [0.5, 1],
+            [0.25, 1],
+            [0.125, 1],
+            ]
+
+# miscalleneous
+workers: 4
+
+delta_ij_max: 40
+translation_max: 10.
+accumulation_frame_num: 0
+accumulation_frame_skip: 1
+
+convert_dict: {}
+grad_false_keys: []
+
+# Train args
+lambda:   
+  e_gn: 100.
+  h_hrzn: 100.
+  fov: 100.
+  g_trs: 1000.  
+  g_depth: 0.1
+  g_mask: 1000.
+fov_pos_num: 30
+fov_neg_ratio: 5
+
+# Train args
+weight_decay: 0.0
+lr: 0.0001
+epochs: 25
+iter_iterval: 5000
+
+# Train args
+dclb:
+  l_rot_range: 0.16666666666
+  l_trs_range: 2
+  c_rot_range: 0.16666666666

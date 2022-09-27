@@ -1,0 +1,43 @@
+# general args
+test: test
+ckpt_path: ./ckpts/rellis/model_best.pth.tar
+
+arch: EFGH
+last_relu: False
+
+use_leaky: True
+bcn_use_bias: True
+bcn_use_norm: True
+
+DEVICE: cuda
+
+# Dataset
+dataset: RELLIS_3D
+data_root: /data/RELLIS-3D
+num_points: 65536
+lidar_line: 64
+lidar_fov_rad: [0.125, -0.125]
+raw_cam_img_size: [900, 1600]
+
+val_samples: -1
+
+# for model
+dim: 3
+batch_size: 1
+scale_map: [[1., 1],
+            [0.75, 1],
+            [0.5, 1],
+            [0.25, 1],
+            [0.125, 1],
+            ]
+
+# miscalleneous
+workers: 4
+
+delta_ij_max: 40
+translation_max: 10.
+accumulation_frame_num: 0
+accumulation_frame_skip: 1
+
+rand_init: ../test/params/rellis_rand_init_30_30.csv
+save_image: False
