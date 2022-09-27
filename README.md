@@ -60,6 +60,9 @@ Set ckpt_path in the test_rellis.yaml file.
 python main.py configs/test_rellis.yaml
 ```
 
+## Acknowledgements
+Our BCL implementation is based on https://github.com/laoreja/HPLFlowNet. 
+
 ## Citation
 If you use our code or method in your work, please cite the following:
 ```
@@ -75,6 +78,3 @@ If you use our code or method in your work, please cite the following:
 }
 ```
 Please direct any questions to Yurim Jeon at yurimjeon1892@gmail.com
-
-## Acknowledgements
-Our BCL implementation is based on https://github.com/laoreja/HPLFlowNet. 
