@@ -9,7 +9,7 @@ This repository contains the code (in PyTorch) for "EFGHNet: A Versatile Image-t
 * PyTorch 1.10
 * RELLIS-3D dataset
 
-## ENVIRONMENT
+## Environment
 
 ```
 conda create -n efgh python=3.8
@@ -41,7 +41,7 @@ data
     └── pt_val.lst
 ```
 
-## SET UP
+## Set up
 ```
 cd lib 
 python build_khash_cffi.py 
@@ -61,5 +61,5 @@ python main.py configs/test_rellis.yaml
 ```
 
 
-## ACKNOWLEDGMENTS
+## Acknowledgements
 Our BCL implementation is based on https://github.com/laoreja/HPLFlowNet. 
