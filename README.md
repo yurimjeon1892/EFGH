@@ -10,7 +10,6 @@ This repository contains the code (in PyTorch) for "EFGHNet: A Versatile Image-t
 * RELLIS-3D dataset
 
 ## Environment
-
 ```
 conda create -n efgh python=3.8
 conda activate efgh
