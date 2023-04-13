@@ -39,5 +39,5 @@ translation_max: 10.
 accumulation_frame_num: 0
 accumulation_frame_skip: 1
 
-rand_init: ../test/params/rellis_rand_init_30_30.csv
+rand_init: ./params/rellis3d_rand_init_30_30.csv
 save_image: False
