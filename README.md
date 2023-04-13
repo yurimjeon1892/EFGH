@@ -60,6 +60,11 @@ Set ckpt_path in the test_rellis.yaml file.
 python main.py configs/test_rellis.yaml
 ```
 
+April 2023 update: 
+## Pretrained model
+Please check the config.yaml file to set the parameters before using the pretrained model.
+[Download link](https://drive.google.com/drive/folders/1CIEBuuXAFR6YPkqEmYpLqjeTLrPSezAV?usp=sharing)
+
 ## Acknowledgements
 Our BCL implementation is based on https://github.com/laoreja/HPLFlowNet. 
 
