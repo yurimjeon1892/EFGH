@@ -61,7 +61,8 @@ python main.py configs/test_rellis.yaml
 
 
 ## Pretrained model
-April 2023 update: 
+*April 2023 update* 
+
 Please check the config.yaml file to set the parameters before using the pretrained model: 
 [Download link](https://drive.google.com/drive/folders/1CIEBuuXAFR6YPkqEmYpLqjeTLrPSezAV?usp=sharing)
 
